@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MovieDetailActivity">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/poster_image"
+            android:layout_width="164dp"
+            android:layout_height="241dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/poster_image_description"
+            app:layout_constraintBottom_toTopOf="@+id/overview"
+            app:layout_constraintEnd_toStartOf="@+id/release_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/movie_poster" />
+
+        <TextView
+            android:id="@+id/view_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/title"
+            android:textSize="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/release_date_title"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toTopOf="@+id/poster_image" />
+
+        <TextView
+            android:id="@+id/release_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/header_release_date"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/release_date"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/view_title" />
+
+        <TextView
+            android:id="@+id/release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/release_date"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/vote_average_title"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/release_date_title" />
+
+        <TextView
+            android:id="@+id/vote_average_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/header_vote"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/vote_average"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/release_date" />
+
+        <TextView
+            android:id="@+id/vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/vote_average"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/poster_image"
+            app:layout_constraintEnd_toEndOf="@+id/overview"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/vote_average_title" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="350dp"
+            android:layout_height="148dp"
+            android:layout_marginBottom="94dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/overview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

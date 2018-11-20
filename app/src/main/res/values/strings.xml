@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="header_release_date">Release Date</string>
+    <string name="header_vote">Vote Average</string>
+    <string name="no_release_date">No release date found for this movie</string>
+    <string name="no_summary">No summary found for this movie</string>
+    <string name="title">Baby Driver</string>
+    <string name="release_date">06–28–2017</string>
+    <string name="vote_average">7.6/10</string>
+    <string name="overview">Baby, a music-loving orphan also happens to be the prodigiously talented go-to getaway driver for heist mastermind Doc. With the perfect soundtrack picked out for each and every job, Baby ensures Doc\'s violent, bank-robbing cronies - including Buddy, Bats and Darling - get in and out of Dodge before it\'s too late. He\'s not in it for the long haul though, hoping to nail one last job before riding off into the sunset with beautiful diner waitress Debora. Easier said than done.</string>
+    <string name="poster_image_description">Movie Poster Image Goes Here</string>
+    <string name="no_internet">No internet, please try again</string>
+    <string name="error">Error Occurred</string>
+    <string name="closing_error">Error occurred while closing</string>
+    <string name="release_date_error">Error occurred getting release date</string>
+    <string name="movie_par">PARCEL_MOVIE</string>
+    <string name="sort_method">SORT_METHOD</string>
+    <string name="sort_by_average_key">SORT_VOTE_AVERAGE_DESC</string>
+    <string name="sort_by_popular_key">SORT_POPULARITY_DESC</string>
+    <string name="sort_by_popular_desc">popular</string>
+    <string name="sort_by_average_desc">top_rated</string>
+    <string name="popular_title">Popular</string>
+    <string name="top_rated_title">Top Rated</string>
+    <string name="favorite_title">Favorite</string>
+    <string name="sort_by_title">Sort By</string>
+    <!-- TODO add your api key -->
+    <string name="api_key"></string>
+</resources>
